@@ -33,5 +33,9 @@ module PathTranslator
       local_path_to(relative_path).realdirpath.to_s.start_with?(root_path.realpath.to_s)
     end
 
+    def exist?(relative_path)
+      File.exist?(local_path_to(relative_path))
+    end
+
   end
 end
