@@ -17,7 +17,7 @@ module PathTranslator
       local_path_to(relative_path).realpath
     end
     
-    def ensure_local_path(relative_path)
+    def ensure_local_path_to(relative_path)
       local_path_to(relative_path).tap { |path| path.mkpath }
     end
 
