@@ -1,5 +1,6 @@
 require "path_translator/version"
 
 module PathTranslator
-  # Your code goes here...
+  autoload(:Root, 'path_translator/root')
+  autoload(:RootSet, 'path_translator/root_set')
 end

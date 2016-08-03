@@ -7,6 +7,10 @@ creating directories relative to the root, etc. These are things I find
 myself doing quite a bit with the various Medusa applications, so it
 seems useful to extract into a single gem.
 
+Of course you can do this with Pathname or File, etc. The advantage here is
+to configure the root directory just once and then use the PathTranslator code
+the rest of the time.
+
 ## Installation
 
 Add this line to your application's Gemfile:
