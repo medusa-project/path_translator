@@ -13,6 +13,10 @@ module PathTranslator
       Pathname.new(File.join(root_path, relative_path))
     end
 
+    def absolute_path_to(relative_path)
+      local_path_to(relative_path).realpath
+    end
+    
     def ensure_local_path(relative_path)
       local_path_to(relative_path).tap { |path| path.mkpath }
     end
