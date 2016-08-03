@@ -37,5 +37,9 @@ module PathTranslator
       File.exist?(local_path_to(relative_path))
     end
 
+    def path_translator_root_to(relative_path)
+      PathTranslator::Root.new(local_path_to(relative_path))
+    end
+    
   end
 end
