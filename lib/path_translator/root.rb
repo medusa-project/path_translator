@@ -14,7 +14,7 @@ module PathTranslator
     end
 
     def ensure_local_path(relative_path)
-      local_path_to(relative_path).mkpath
+      local_path_to(relative_path).tap { |path| path.mkpath }
     end
 
     def entries_at(relative_path)
