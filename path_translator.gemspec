@@ -13,7 +13,7 @@ Gem::Specification.new do |spec|
   spec.description   = %q{Specify one or more root paths. Then translate paths relative to those root paths and
                           provide other useful operations.}
   spec.homepage      = "https://github.com/medusa-project/path_translator"
-  spec.license       = "MIT"
+  spec.license       = "University of Illinois/NCSA Open Source License"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   spec.bindir        = "exe"
